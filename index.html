@@ -3,96 +3,168 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Enyata Frontend Challenge</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Hero section start -->
-        <section class="hero-section">
-            <header class="main-header">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="">
-                    </div>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="">Home</a></li>
-                        <li class="nav-item"><a href="">For Fans</a></li>
-                        <li class="nav-item"><a href="">For influencers</a></li>
-                        <li class="nav-item"><a href="">Features</a></li>
-                        <li class="nav-item"><a href="">FAQ's</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Home Section -->
+    <section class="home wrapper">
+        <header>
+            <img class="logo" src="img/hero/logo.png" alt="Logo" />
 
-            <div class="hero-container">
-                <div class="hero-text">
-                    <h1 class="hero-title">Build direct, meaningful connections.</h1>
-                    <p class="header-subtitle">Ear1 helps you connect directly with your favourite influencers for a
-                        small
-                        fee. What’s more? We assure you of getting a reply.</p>
-                </div>
-                <div class="download-option__buttons">
-                    <a href="" class="store-btn playstore-button"><img src="./img/google.svg" alt=""></a>
-                    <a href="" class="store-btn appstore-button"> <img src="./img/appstore.svg" alt=""></a>
-                </div>
-            </div>
-        </section>
-        <!-- hero section end -->
+            <nav>
+                <a href="">Home</a>
+                <a href="">For Fans</a>
+                <a href="">For Influencers</a>
+                <a href="">Features</a>
+                <a href="">FAQs</a>
+            </nav>
+        </header>
 
-        <!-- About us section -->
-        <section class="about-us">
-            <div class="container">
-                <div class="about-us__text">
-                    <h1 class="header-text">What can Ear1 help you do?</h1>
-                    <p class="sub-text">Are you an individual looking to connect with an influencer without the hassle
-                        of
-                        waiting for the reply over a long time, or an influencer looking to filter your dm’s and connect
-                        with your audience, Ear1 has got you covered.</p>
-                </div>
-                <div class="about-us__img">
-                    <img src="./img/about-us-big.png" alt="">
-                </div>
+        <div class="hero">
+            <h1 class="hero__heading">
+                Build direct, meaningful connections.
+            </h1>
+
+            <p class="hero__text">
+                Ear1 helps you connect directly with your influencers
+                for a small fee. What's more? We assure you of getting a reply.
+            </p>
+
+            <div class="download-btns">
+                <a href="" class="download-btn">
+                    <img src="img/hero/google.svg" />
+                </a>
+                <a href="" class="download-btn">
+                    <img src="img/hero/appstore.svg" />
+                </a>
             </div>
-        </section>
-        <!-- About us section end -->
-        <!-- Fans section start -->
-        <section class="fans">
-            <div class="container">
-                <div class="fans-text">
-                    <div class="badge">
-                        <span>Fans</span>
-                    </div>
-                    <h1 class="header-text">Connect with top influencers in your field</h1>
-                    <p>From Tech to music to business, Ear1 has a wide range of industry experts in diverse fields you
-                        have
-                        always wanted to connect with. Now is your best chance.</p>
-                </div>
-                <div class="fans-img">
-                    <img src="./img/fans-img.png" alt="">
-                </div>
+
+            <div class="mobile-images">
+                <img class="mobile-left" src="img/hero/bm1.png" alt="Mobile 1" />
+                <img class="mobile-center" src="img/hero/bm2.png" alt="Mobile 2" />
+                <img class="mobile-right" src="img/hero/bm3.png" alt="Mobile 3" />
             </div>
-        </section>
-        <!-- End of fans section -->
-        <section class="influencers">
-            <div class="container">
-                <div class="influencer-img">
-                    <img src="./img/davido.png" alt="">
-                </div>
-                <div class="influencer-text">
-                    <h1 class="header-text">Earn money while you chat</h1>
-                    <p>As an influencer, you get paid by your audience to connect with them. That way to maximize time
-                        while earning. </p>
-                </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about wrapper">
+        <h2 class="about__heading">
+            What can ear1<br /> help you do?
+        </h2>
+
+        <p class="about__text">
+            Are you an individual looking to connect with an influencer without the
+            hassle of waiting for the reply over a long time, or an influencer looking to
+            filter your dm's and connect with your audience, Ear1 has got you covered.
+        </p>
+    </section>
+
+    <!-- Fans Section -->
+    <section class="fans wrapper">
+        <div class="fans__row">
+            <div class="fans__col">
+                <span class="fans__badge">Fans</span>
+
+                <h2 class="fans__heading">
+                    Connect with top influencers in your field
+                </h2>
+
+                <p class="fans__text">
+                    From tech to music to business, Ear1 has a wide
+                    range of industry experts in diverse fields you have
+                    always wanted to connect with. Now is your best chance.
+                </p>
             </div>
-        </section>
-    </div>
+        
+            <div class="fans__col" style="text-align: right;">
+                <img src="img/fans-img.png" alt="Fan" />
+            </div>
+        </div>
+
+        <div class="fans__row">
+            <div class="fans__col" style="background-color: var(--primary-color);">
+                <div class="fans__header__wrapper">
+                    <span class="fans__badge">Fans</span>
+
+                    <span class="fans__msg__icon">
+                        <img src="img/msg-icon.svg" />
+                    </span>
+                </div>
+
+                <h2 class="fans__heading">
+                    Be assured of replies
+                </h2>
+
+                <p class="fans__text">
+                    With ear1, we assure you of getting a response to
+                    your messages. Don’t be part of the noise in the
+                    dms. Get ahead of the game by paying a small fee.
+                </p>
+            </div>
+        
+            <div class="fans__col">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Influencers Section -->
+    <section class="influencers wrapper">
+        <div class="influencers__row">
+            <div class="influencers__col">
+                <img src="img/influencers/davido.png" alt="Davido" />
+            </div>
+
+            <div class="influencers__col influencers__col--center">
+                <span class="influencers__badge">Influencers</span>
+
+                <h2 class="influencers__heading">
+                    Earn money while you chat
+                </h2>
+
+                <p class="influencers__text">
+                    With ear1, we assure you of getting a response to
+                    your messages. Don’t be part of the noise in the
+                    dms. Get ahead of the game by paying a small fee.
+                </p>
+            </div>
+        </div>
+
+        <div class="influencers__row">
+            <div class="influencers__col">
+                
+            </div>
+
+            <div class="influencers__col influencers__col--center influencers__col--dark">
+                <span class="influencers__badge">Influencers</span>
+
+                <h2 class="influencers__heading">
+                    Filter the noise in the dm’s
+                </h2>
+
+                <p class="influencers__text">
+                    Ear1 helps you get rid of all the noise in your dm’s
+                    across other social media apps. This way, you are
+                    sure to connect with serious people and make genuine
+                    business and personal connections.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="wrapper"></footer>
 </body>
 
 </html>
